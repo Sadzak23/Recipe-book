@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+  activeTab: string = "recipes"
+
+  onTabSelected = (tab: string) => {
+    this.activeTab = tab
+  }
 }
